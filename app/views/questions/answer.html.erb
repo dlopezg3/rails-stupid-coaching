@@ -1,3 +1,9 @@
-<h1> <%=@coach_answer %> </h1>
-
-<%= link_to "Say something bastard! I dare you", root_path %>
+<div class="container">
+  <div class="card-container" style="background-color: lightgray">
+    <h4 style="padding: 10px"> User: <%=@user_question %> </h4>
+    <h1 style="padding: 10px"> Coach: <%=@coach_answer %> </h1>
+  </div>
+</div>
+<div class="container">
+  <%= link_to "Say something else bastard! I dare you", root_path %>
+</div>

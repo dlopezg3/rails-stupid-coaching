@@ -5,8 +5,8 @@ class QuestionsController < ApplicationController
   end
 
   def answer
-    user_question =  params[:user_input]
-    @coach_answer = coach_answer_enhanced(user_question)
+    @user_question =  params[:user_input]
+    @coach_answer = coach_answer_enhanced(@user_question)
   end
 
 end
